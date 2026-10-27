@@ -5,7 +5,7 @@
 #' @returns a string of the table
 #' @export
 #'
-table_to_string <- function(codons){
+translator <- function(codons){
   result <- paste0(codon_table[codons], collapse = "")
   return(result)
 }
