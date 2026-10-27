@@ -1,0 +1,36 @@
+
+## <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+title: “bio_dogma” output: rmarkdown::html_vignette vignette: \> % % % —
+
+``` r
+library(bio.dogma)
+```
+
+Bio.dogma is a R package built for executing DNA translation and RNA
+translation to amino acids and counting the frequency of the amino acids
+for a given sequence. Function 1 - DNA sequence: Generates a random DNA
+sequences of a given length. - Description: DNA sequence - Usage:
+DNA_sequence(length) - Arguments: length length of DNA sequence - Value:
+DNA sequence of size = length
+
+Function 2 - Gen_RNA: Converts DNA to RNA by replacing T’s to U’s. -
+Description: RNA Generator - Usage: gen_RNA(DNAseq) - Arguments: DNAseq
+is a string containing a DNA sequence - Value: the corresponding RNA
+sequence
+
+Function 3 - codon_chopper: RNA is converted to codons relying on set
+open reading frame. - Description: codon_chopper - Usage:
+codon_chopper(dna_string, start = 1) - Arguments: dna_string dna string
+to chop start index to start chopping at - Value: codons of the dna
+string
+
+Function 4 – translator: Each codon is translated to its corresponding
+amino acid of the codon usage table. - Description: translator - Usage:
+translator(codons) - Arguments: codons an index for the table containing
+codons - Value: a string of the table
+
+Function 5- AA_counter: Amino acid frequency for the sequence is
+plotted. - Description: Amino Acid Counter - Usage: AA_counter(AA_seq) -
+Arguments: AA_seq is a string of amino acids - Value: a plot of amino
+acid frequencies

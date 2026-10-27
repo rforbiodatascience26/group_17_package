@@ -3,53 +3,32 @@ output: github_document
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+---
+title: "bio_dogma"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{bio_dogma}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
+  comment = "#>"
 )
 ```
 
-# bio.dogma
-
-<!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-<!-- badges: end -->
-
-The goal of bio.dogma is to ...
-
-## Installation
-
-You can install the development version of bio.dogma like so:
-
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
-```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
+```{r setup}
 library(bio.dogma)
-## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+Bio.dogma is a R package built for executing DNA translation and RNA translation to amino acids and counting the frequency of the amino acids for a given sequence. Function 1 - DNA sequence: Generates a random DNA sequences of a given length. - Description: DNA sequence - Usage: DNA_sequence(length) - Arguments: length length of DNA sequence - Value: DNA sequence of size = length
 
-```{r cars}
-summary(cars)
-```
+Function 2 - Gen_RNA: Converts DNA to RNA by replacing T’s to U’s. - Description: RNA Generator - Usage: gen_RNA(DNAseq) - Arguments: DNAseq is a string containing a DNA sequence - Value: the corresponding RNA sequence
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
+Function 3 - codon_chopper: RNA is converted to codons relying on set open reading frame. - Description: codon_chopper - Usage: codon_chopper(dna_string, start = 1) - Arguments: dna_string dna string to chop start index to start chopping at - Value: codons of the dna string
 
-You can also embed plots, for example:
+Function 4 – translator: Each codon is translated to its corresponding amino acid of the codon usage table. - Description: translator - Usage: translator(codons) - Arguments: codons an index for the table containing codons - Value: a string of the table
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+Function 5- AA_counter: Amino acid frequency for the sequence is plotted. - Description: Amino Acid Counter - Usage: AA_counter(AA_seq) - Arguments: AA_seq is a string of amino acids - Value: a plot of amino acid frequencies
