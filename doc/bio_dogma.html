@@ -343,27 +343,49 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(bio.dogma)</span></code></pre></div>
 <p>Bio.dogma is a R package built for executing DNA translation and RNA
 translation to amino acids and counting the frequency of the amino acids
-for a given sequence. Function 1 - DNA sequence: Generates a random DNA
-sequences of a given length. - Description: DNA sequence - Usage:
-DNA_sequence(length) - Arguments: length length of DNA sequence - Value:
-DNA sequence of size = length</p>
-<p>Function 2 - Gen_RNA: Converts DNA to RNA by replacing T’s to U’s. -
-Description: RNA Generator - Usage: gen_RNA(DNAseq) - Arguments: DNAseq
-is a string containing a DNA sequence - Value: the corresponding RNA
-sequence</p>
+for a given sequence.</p>
+<p>Function 1 - DNA sequence: Generates a random DNA sequences of a
+given length.</p>
+<ul>
+<li><p>Description: DNA sequence</p></li>
+<li><p>Usage: DNA_sequence(length)</p></li>
+<li><p>Arguments: length length of DNA sequence</p></li>
+<li><p>Value: DNA sequence of size = length</p></li>
+</ul>
+<p>Function 2 - Gen_RNA: Converts DNA to RNA by replacing T’s to
+U’s.</p>
+<ul>
+<li><p>Description: RNA Generator</p></li>
+<li><p>Usage: gen_RNA(DNAseq)</p></li>
+<li><p>Arguments: DNAseq is a string containing a DNA sequence</p></li>
+<li><p>Value: the corresponding RNA sequence</p></li>
+</ul>
 <p>Function 3 - codon_chopper: RNA is converted to codons relying on set
-open reading frame. - Description: codon_chopper - Usage:
-codon_chopper(dna_string, start = 1) - Arguments: dna_string dna string
-to chop start index to start chopping at - Value: codons of the dna
-string</p>
+open reading frame.</p>
+<ul>
+<li><p>Description: codon_chopper</p></li>
+<li><p>Usage: codon_chopper(dna_string, start = 1)</p></li>
+<li><p>Arguments: dna_string dna string to chop start index to start
+chopping at</p></li>
+<li><p>Value: codons of the dna string</p></li>
+</ul>
 <p>Function 4 – translator: Each codon is translated to its
-corresponding amino acid of the codon usage table. - Description:
-translator - Usage: translator(codons) - Arguments: codons an index for
-the table containing codons - Value: a string of the table</p>
-<p>Function 5- AA_counter: Amino acid frequency for the sequence is
-plotted. - Description: Amino Acid Counter - Usage: AA_counter(AA_seq) -
-Arguments: AA_seq is a string of amino acids - Value: a plot of amino
-acid frequencies</p>
+corresponding amino acid of the codon usage table.</p>
+<ul>
+<li><p>Description: translator</p></li>
+<li><p>Usage: translator(codons)</p></li>
+<li><p>Arguments: codons an index for the table containing
+codons</p></li>
+<li><p>Value: a string of the table</p></li>
+</ul>
+<p>Function 5 - AA_counter: Amino acid frequency for the sequence is
+plotted.</p>
+<ul>
+<li><p>Description: Amino Acid Counter</p></li>
+<li><p>Usage: AA_counter(AA_seq)</p></li>
+<li><p>Arguments: AA_seq is a string of amino acids</p></li>
+<li><p>Value: a plot of amino acid frequencies</p></li>
+</ul>
 
 
 
