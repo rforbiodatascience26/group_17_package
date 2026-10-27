@@ -1,6 +1,6 @@
 ---
 title: "bio_dogma"
-output: rmarkdown::pdf_document
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{bio_dogma}
   %\VignetteEngine{knitr::rmarkdown}
