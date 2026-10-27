@@ -19,3 +19,6 @@ Description: Conversion of DNA to RNA and RNA to aa sequence.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 3.5)
+RoxygenNote: 7.3.2
