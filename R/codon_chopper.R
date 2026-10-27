@@ -1,4 +1,4 @@
-#' codon_finder
+#' codon_chopper
 #'
 #' @param dna_string dna string to chop
 #' @param start index to start chopping at
