@@ -69,5 +69,3 @@ Function 5 - AA_counter: Amino acid frequency for the sequence is plotted.
 -   Arguments: AA_seq is a string of amino acids
 
 -   Value: a plot of amino acid frequencies
-
-
