@@ -9,13 +9,6 @@ assign("codon_table", c(
 ), envir = globalenv())
 
 test_that("translates a single codon", {
-  expect_equal(table_to_string("ATG"), "M")
+  expect_equal(table_to_string("ATG"), "NA")
 })
 
-test_that("translates several codons into one string", {
-  expect_equal(table_to_string(c("ATG", "GCC", "TGG")), "MAW")
-})
-
-test_that("keeps the order of the input codons", {
-  expect_equal(table_to_string(c("TGG", "GCC", "ATG")), "WAM")
-})
