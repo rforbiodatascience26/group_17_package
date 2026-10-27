@@ -1,0 +1,21 @@
+Package: bio.dogma
+Type: Package
+Title: Central dogma
+Version: 0.1.0
+Authors@R:
+  c(person(given = "Marc",
+           family = "Magem",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s253362@dtu.dk"), 
+    person(given = "Caroline",
+           family = "Rasmussen",
+           role = "aut",
+           email = "s215120@dtu.dk"),
+    person(given = "Tijn",
+           family = "Friederich",
+           role = "aut",
+           email = "s262015@dtu.dk"))
+Description: Conversion of DNA to RNA and RNA to aa sequence.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
