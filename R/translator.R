@@ -1,4 +1,4 @@
-#' table_to_string
+#' translator
 #'
 #' @param codons an index for the table containing codons
 #'
