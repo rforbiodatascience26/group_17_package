@@ -2,6 +2,7 @@ test_that("multiplication works", {
   expect_equal(2 * 2, 4)
 })
 
+
 table = c("UUU" = "F", "UCU" = "S", "UAU" = "Y", "UGU" = "C",
           "UUC" = "F", "UCC" = "S", "UAC" = "Y", "UGC" = "C",
           "UUA" = "L", "UCA" = "S", "UAA" = "_", "UGA" = "_",
